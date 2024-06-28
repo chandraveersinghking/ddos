@@ -125,7 +125,7 @@ def remove_user(message):
                 response = f"User {user_to_remove} not found in the list ❌."
         else:
             response = '''Please Specify A User ID to Remove. 
-✅ Usage: /remove <userid>'''
+ Usage: /remove <userid>'''
     else:
         response = "Only Admin Can Run This Command 😡."
 
@@ -299,7 +299,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
+    response = f'''Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
 Welcome To The World's Best Ddos Bot⚡'''
     bot.reply_to(message, response)
